@@ -21,7 +21,7 @@ import pickle
 
 data_directory = '/mnt/DataNibelungen/Dhruv/'
 rwpath = '/mnt/DataNibelungen/Dhruv/MEC-UPState'
-datasets = np.loadtxt(os.path.join(rwpath,'MEC_dataset_test.list'), delimiter = '\n', dtype = str, comments = '#')
+datasets = np.genfromtxt(os.path.join(rwpath,'MEC_dataset_test.list'), delimiter = '\n', dtype = str, comments = '#')
 
 
 allcoefs_up = []
